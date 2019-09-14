@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/ivEvent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/event_placeholder" />
+
+            <org.mmtextview.components.MMTextView
+                android:id="@+id/tvEventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/ivEvent"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:text="Birthday Party"
+                android:textColor="#353535"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <org.mmtextview.components.MMTextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvEventName"
+                android:layout_toEndOf="@id/ivEvent"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:text="06:00 PM - 8:00 PM"
+                android:textColor="#2196F3"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/ivEventGenderType"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_male" />
+
+            <org.mmtextview.components.MMTextView
+                android:id="@+id/tvEventAgeRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivEventGenderType"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="4dp"
+                android:text="18-25"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <org.mmtextview.components.MMTextView
+            android:id="@+id/tvLocationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Yangon Yangon BBQ"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <org.mmtextview.components.MMTextView
+            android:id="@+id/tvLocationFullAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Apartment 021, Building No 4, Upper Pazundaung Township, Yangon"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_margin="4dp"
+            android:background="#888888" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:id="@+id/ivOrganizer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/person_placeholder" />
+
+
+            <org.mmtextview.components.MMTextView
+                android:id="@+id/tvOrganizerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/ivOrganizer"
+                android:padding="4dp"
+                android:text="John T.Lord"
+                android:textColor="#464545"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <org.mmtextview.components.MMTextView
+                android:id="@+id/tvEventOwnerRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvOrganizerName"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/ivOrganizer"
+                android:paddingStart="4dp"
+                android:text="Organizer"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
