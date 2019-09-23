@@ -1,6 +1,5 @@
 package com.padc.padckotlin.adapters
 
-import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.padc.padckotlin.viewholders.BaseViewHolder
 

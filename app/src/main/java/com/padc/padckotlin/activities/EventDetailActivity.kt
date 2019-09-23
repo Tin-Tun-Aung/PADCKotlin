@@ -28,6 +28,7 @@ class EventDetailActivity: BaseActivity() {
 
     private fun bindData(eventVO: EventVO) {
         tvEventTitle.text = eventVO.eventName
+        collapsingToolbar.title = eventVO.eventName
 
         Glide.with(ivTagImage)
             .load(eventVO.eventOrganizerVO.organizerPhotoUrl)

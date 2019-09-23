@@ -16,6 +16,4 @@ class EventListAdapter(private val delegate: EventItemDelegate) :
         return EventItemViewHolder(view, delegate)
     }
 
-
-
 }

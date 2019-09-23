@@ -9,4 +9,5 @@ class EventApplication: Application() {
         super.onCreate()
         EventModelImpl.initDatabase(applicationContext)
     }
+
 }

@@ -27,9 +27,7 @@ abstract class EventDatabase: RoomDatabase() {
                         .build()
             }
 
-
-            val db = instance!!
-            return db
+            return instance!!
         }
     }
 

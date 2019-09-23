@@ -19,7 +19,6 @@ class EventItemViewHolder(itemView: View, private val delegate: EventItemDelegat
             data?.id?.let { id ->
                 delegate.onTapEventItem(id)
             }
-
         }
     }
 
